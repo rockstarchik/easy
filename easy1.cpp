@@ -22,11 +22,5 @@ double itc_fabs(double num) {
 }
 
 int itc_revnbr(int num) {
-    int a = 0;
-    if (num < 0)
-        num = num * (-1);
-    while (num > 0)
-        a = a * 10 + num % 10;
-        num = num / 10;
-    return a;
+    return num % 10 * 100 + num / 10 % 10 * 10 + num / 100;
 }

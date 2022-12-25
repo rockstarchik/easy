@@ -1,12 +1,11 @@
 #include "easy.h"
 using namespace std;
  
-bool itc_iseven(int num){
-	if (num % 2 == 0) 
-		return 0;
-	else
+bool itc_iseven(int num) {
+	if (num % 2 == 0)
 		return 1;
-	}
+	return 0;
+}
 
 int itc_max(int num, int num2) {
 	if (num > num2)

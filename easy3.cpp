@@ -5,7 +5,7 @@ int itc_sqrt(int num) {
 	int i = 0;
 	if (num < 0)
 		return -1;
-	while (i * i != num)
+	while (i * i < num)
 		i++;
 	return i;
 }

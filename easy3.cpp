@@ -23,7 +23,7 @@ int itc_spr(int a, int b) {
 }
 int itc_str(int a, int b, int c) {
 	int p;
-	S = 1;
+	int S = 1;
 	if (a + b <= c || a + c <= b || b + c <= a || a <= 0 || b <= 0 || c <= 0)
 		return -1;
 	 double p = (a + b + c) / 2;

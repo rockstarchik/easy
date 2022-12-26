@@ -3,7 +3,7 @@ using namespace std;
 
 int itc_sqrt(int num) {
 	int i = 1;
-	if ( i == -2147483647 || i == 2147483647)
+	if ( num == -2147483647 || num == 2147483647)
 	 return -1;
 	while (i * i < num)
 		i++;

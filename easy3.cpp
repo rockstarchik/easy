@@ -7,7 +7,10 @@ int itc_sqrt(int num) {
 		i++;
 	if (i * i == num)
 		return i;
+	if ( i == -2147483647 || i == 2147483647)
+	 return -1;
 	return -1;
+
 }
 int itc_skv(int num) {
 	if (num <= 0)
@@ -33,9 +36,10 @@ int itc_str(int a, int b, int c) {
 	return -1;
 }
 
-double itc_scir(int radius) {
+double itc_scir(int radius) { 
 	double pi = 3.14;
 	if (radius < 0)
 		return -1;
 	return pi * radius * radius;
 }
+
